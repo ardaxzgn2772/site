@@ -100,8 +100,8 @@
             fetch("http://127.0.0.1:5000/get-ip")
                 .then(response => response.json())
                 .then(data => {
-                    const region = data.region || "都道府県情報は取得できませんでした";
-                    alert("認証完了！IPアドレスが送信されました\n地域: " + region);
+                    const region = data.region || "失敗";
+                    alert("認証完了！");
                 })
                 .catch(error => console.error("エラー:", error));
 
